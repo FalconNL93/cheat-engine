@@ -1,0 +1,13 @@
+kind: pipeline
+type: docker
+name: default
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: compile
+  image: delphisucks/lazarus:latest
+  commands:
+  - lazbuild CheatEngine/cheatengine.lpr
