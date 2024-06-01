@@ -1,6 +1,10 @@
 kind: pipeline
 name: default
 
+trigger:
+  branch:
+  - master
+
 steps:
 - name: test
   image: ubuntu
